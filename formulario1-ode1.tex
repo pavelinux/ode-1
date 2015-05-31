@@ -1,0 +1,133 @@
+\documentclass[twoside, twocolumn, 10pt]{article}
+\usepackage{amsthm,amssymb,amsmath,amsfonts}
+\usepackage{color}
+\definecolor{r}{rgb}{0.5, 0.0, 0.7}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\def\ma{\mathbb}
+\setlength{\topmargin}{-3cm} \addtolength{\textheight}{5.5cm}
+\addtolength{\hoffset}{-1cm} \addtolength{\textwidth}{3cm}
+\title{Formulario Ecuaciones Diferenciales I}
+\author{P\'avel Ernesto Oropeza Alfaro \\Formulario 1 \\(4-29 de Mayo de 2015)}
+\begin{document}
+\date{ }
+\maketitle
+\thispagestyle{empty}
+{\begin{small}
+\begin{enumerate}
+    \item \textbf{Definición} y clasificación de las ecuaciones diferenciales. 
+\begin{itemize}
+    \item Es una ecuación que contiene derivadas de una o más 
+        variables respecto a una o más variables independientes.
+        $F(x,y, y^{\prime},y^{\prime},y^{(n)})=0$
+    \item Se clasifican por \textbf{tipo}, \textbf{orden} y \textbf{linealidad}
+    \item En la clasificación por orden, el orden de la ODE es el orden de la
+        mayor derivada en la ecuación.
+    \item Las ODE de primer orden a menudo se escriben como 
+        $M(x,y)dx + N(x,y) dy = 0$
+    \item Es común escribir las ODE de primer y segundo orden en su \textbf{forma normal}:
+        $\frac{dy}{dx}=f(x,y)$ y $\frac{d^{2}y}{dx^{2}}=f(x,y,y^{\prime})$
+\end{itemize}
+
+\item \textbf{Solución de una ODE}. Es una función $\phi$ definida en un intervalo $I$ que
+    tiene al menos $n$ derivadas continuas en $I$, las cuales al sustituirse en
+    una ODE reducen la ecuación a una identidad.
+
+\item \textbf{Factor Integrante $\mu(x)=e^{\int p(x) dx}$.} Una forma alternativa de escribir una ODE lineal 
+    $\frac{dy}{dx}=f(x,y)$ es la siguiente:
+    $y^{\prime} + p(x)y=g(x)$
+
+Por ejemplo, $\frac{dy}{dx}=\frac{3}{2}-\frac{1y}{2}$ se puede escribir como:
+$y^{\prime} + \frac{1y}{2}=\frac{3}{2}$
+\item \textbf{Clasificación de una ODE lineal de orden 1 (Se pueden obtener Soluciones exactas)}
+\begin{itemize}
+    \item Variables Separables: $\frac{dy}{dx}=\frac{g(x)}{h(y)}$
+    \item Lineales: $y^{\prime} + p(x)y=g(x)$
+    \item Exactas: $M(x,y)dx + N(x,y) dy = 0$
+    \item Métodos especiales:
+    \item [a)] Sustitución / Bernoulli
+    \item [b)] Factor integrante
+%\item [a)] $f(x, y)= e^{1+x^2 -y^2}$.
+%\item[b)] $f(x, y)= 4x^3 +y^3-12x -3y$
+%\item [c)] $f(x, y)= y^3+3x^2y-6x^2 -6y^2 +2$
+%\item[d)]$f(x, y)=e^{x}\cos y$
+\end{itemize} 
+
+\item \textbf{Ecuaciones lineales de Segundo Orden (homogéneas)}. 
+    \begin{center}
+    $\frac{d^{2}y}{dx^{2}}=f(x,y,\frac{dy}{dx})$ 
+    \end{center}
+
+    En donde $f$ se puede escribir como:
+
+    \begin{center}
+    $f(x,y,\frac{dy}{dx})=g(x)-p(x)\frac{dy}{dx}-q(x)y$, 
+    \end{center}
+    donde
+    $g,p$ y $q$ son funciones continuas en el $I$ solución.
+    Reescribiendo y considerando la ecuación como homogénea ($g(x)=0$): 
+    \begin{center}
+    $a_{0}(x)y^{\prime\prime} + a_{1}(x)y^{\prime} + a_{0}(x)y = 0$
+    \end{center}
+\begin{itemize}
+    \item Conjunto fundamental, independencial lineal y wronskiano
+    \item Principio de superposición:
+        If $y_{1}$ and $y_{2}$ are solutions of 
+        \begin{center}
+        $L[y]=y^{\prime\prime} + p(t)y^{\prime} + q(t)y=0$
+        \end{center}
+        then the linear combination (lc) $c_{1}y_{1}+c_{2}y_{2}$ is also a
+        solution for any values of $c_{1}$ and $c_{2}$
+
+    \item Dos ODE lineales de segundo orden típicas:
+    \begin{center}
+        $y^{\prime\prime}+5y^{\prime}+6y=0$ 
+
+        $y^{\prime\prime}+\omega^{2}y=0$
+    \end{center}
+    \item Polinomio (ecuación) característica. Raíces diferentes, dobles y complejas.
+    \item Condiciones iniciales.
+    \item Reducción de orden.
+    \item Gráficas de soluciones.
+
+
+
+\end{itemize} 
+\item \textbf{PRIMER PARCIAL}. 
+\item \textbf{Ecuaciones lineales de Segundo Orden (no homogéneas)}. 
+\begin{itemize}
+    \item Método 1. Proponer una solución particular adecuada
+
+\end{itemize}
+%\begin{itemize}
+%\item [a)] $f(x, y)= 4x-6y$, sobre la regi\'on cerrada y acotada definida por $\displaystyle\frac{x^2}{4} + y^2 \leq 1$.
+%\item [b)] $f(x, y)=x^2 +y^2 +x^2y +4$, donde\linebreak $D=\{(x, y) ~\mid ~ \mid x \mid \leq 1, \mid y \mid \leq 1 \}$.
+%\end{itemize}
+%
+%\item Encuentre los puntos de la superficie $z^2=x^2 +y^2$ m\'as cercanos al punto $(4, 2, 0)$.
+%
+%\item Determine tres n\'umeros positivos cuya suma sea $21$, tal que su producto $P$ sea m\'aximo.
+%
+%\item Una caja de cart\'on sin tapa debe tener un volumen de $32000 cm^3$. Encuentre las dimensiones que haga m\'inima la cantidad de cart\'on utilizada.
+%
+%\item Utilice multiplicadores de Lagrange para hallar los valores m\'aximos y m\'inimos de la funci\'on $f(x, y)= 4x +6y$, sujetos a la restricci\'on $x^2 +y^2=13$.
+%\begin{itemize}
+%\item Dibuje algunas curvas de nivel de $f(x, y)$ y en el mismo plano dibuje la circunferencia $x^2 +y^2=13$.
+%\item Dibuje los vectores gradientes a las curvas de nivel correspondientes, en los puntos donde $f$ tiene sus valores extremos.
+%\item Analice la geometr\'ia de la soluci\'on obtenida.
+%\end{itemize}
+%
+%\item Use multiplicadores de Lagrange para calcular los va\-lores m\'aximos y m\'inimos de $f(x, y)= xy$, sujetos  a la res\-tricci\'on $x^2 +y^2 \leq 1$.
+%
+\end{enumerate}
+%
+%\bigskip
+%
+%\textbf{Valor Total: 20 puntos}.
+ \vspace{.1cm} 
+% \indent \textbf{Fecha de entrega:} Viernes 20 de Marzo de 2015. ( se puede entregar en equipos entre [1, 5] personas)
+\end{small}}
+ 
+
+\end{document}
