@@ -144,10 +144,11 @@ Es una ode homogénea con coeficientes constantes, la cual puede resolverse con:
 
 \end{itemize} 
 %\item \textbf{PRIMER PARCIAL}. 
-% \item \textbf{Ecuaciones lineales de Segundo Orden (no homogéneas)}. 
-% \begin{itemize}
-%     \item Método 1. Proponer una solución particular adecuada
-% \end{itemize}
+\item \textbf{Ecuaciones lineales de Segundo Orden (no homogéneas)}. 
+\begin{itemize}
+    \item Método 1. Proponer una solución particular adecuada
+
+\end{itemize}
 \end{enumerate}
 %
 %\bigskip
@@ -155,4 +156,6 @@ Es una ode homogénea con coeficientes constantes, la cual puede resolverse con:
  \vspace{.1cm} 
 % \indent \textbf{Fecha de entrega:} Viernes 20 de Marzo de 2015. ( se puede entregar en equipos entre [1, 5] personas)
 \end{small}}
+ 
+
 \end{document}
