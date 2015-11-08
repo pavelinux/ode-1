@@ -8,7 +8,7 @@
 \def\ma{\mathbb}
 \setlength{\topmargin}{-3cm} \addtolength{\textheight}{5.5cm}
 \addtolength{\hoffset}{-1cm} \addtolength{\textwidth}{3cm}
-\title{Formulario Ecuaciones Diferenciales I}
+\title{Ecuaciones Diferenciales Ordinarias I}
 \author{P\'avel Ernesto Oropeza Alfaro \\Formulario 1}
 \begin{document}
 \date{}
@@ -127,7 +127,25 @@ Es una ode homogénea con coeficientes constantes, la cual puede resolverse con:
     \begin{equation}
      y(t) = e^{at}(c_{1} cos(bt) + c_{2} sin(bt))
     \end{equation}
-%     \item Raíces repetidas.
+    \item Raíces repetidas y Reducción de orden.
+    
+    Solución General:
+    \begin{equation}
+    y = c_{1} e^{r_{1}t} + c_{2} t e^{r_{2}t}
+    \end{equation}
+    
+    Reducción de Orden:
+    \begin{equation}
+     
+    \end{equation}
+
+
+    
+    \item Ecuación de Euler-Cauchy:
+    \begin{equation}
+    t^{2}\frac{d^{2}y}{dt^{2}}+\alpha t\frac{dy}{dx} + \beta y = 0 
+    \end{equation}
+
 %     \item Condiciones iniciales. 
 %     \item Dos ODE lineales de segundo orden típicas:
 %     \begin{center}
@@ -144,11 +162,10 @@ Es una ode homogénea con coeficientes constantes, la cual puede resolverse con:
 
 \end{itemize} 
 %\item \textbf{PRIMER PARCIAL}. 
-\item \textbf{Ecuaciones lineales de Segundo Orden (no homogéneas)}. 
-\begin{itemize}
-    \item Método 1. Proponer una solución particular adecuada
-
-\end{itemize}
+% \item \textbf{Ecuaciones lineales de Segundo Orden (no homogéneas)}. 
+% \begin{itemize}
+%     \item Método 1. Proponer una solución particular adecuada
+% \end{itemize}
 \end{enumerate}
 %
 %\bigskip
@@ -156,6 +173,4 @@ Es una ode homogénea con coeficientes constantes, la cual puede resolverse con:
  \vspace{.1cm} 
 % \indent \textbf{Fecha de entrega:} Viernes 20 de Marzo de 2015. ( se puede entregar en equipos entre [1, 5] personas)
 \end{small}}
- 
-
 \end{document}
